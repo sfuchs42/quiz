@@ -1,1 +1,10 @@
-<h1>This is our basic landing page<h1>
+<div class="quiz-box text-center">
+	<h1>Quotes For All From All<h1>
+	<% if @landing != nil %>
+		<h2><%= @landing.quote %></h2>
+		<h3>- <%= @landing.author %></h3>
+	<% else %>
+		<h2>There aren't any quotes yet D:</h2>
+		<%= link_to 'Add a quote', new_landing_path , class: 'btn btn-primary' %>
+	<% end %>
+</div>

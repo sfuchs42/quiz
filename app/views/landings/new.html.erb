@@ -1,0 +1,9 @@
+<div class="quiz-box">
+	<h1>Enter Your Quote</h1>
+	<%= simple_form_for @landing do |f| %>
+		<%= f.input :quote %>
+		<%= f.input :author %>
+		<br />
+		<%= f.submit 'Create', class: 'btn btn-primary' %>
+	<% end %>
+</div>
